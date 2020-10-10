@@ -1,0 +1,8 @@
+-------------------------------------------------------------------------------
+Test set: com.nic.zipkinserver.ZipkinServerApplicationTests
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 14.042 s <<< FAILURE! - in com.nic.zipkinserver.ZipkinServerApplicationTests
+contextLoads  Time elapsed: 0.038 s  <<< ERROR!
+java.lang.IllegalStateException: Failed to load ApplicationContext
+Caused by: org.springframework.beans.factory.support.BeanDefinitionOverrideException: Invalid bean definition with name 'characterEncodingFilter' defined in class path resource [zipkin2/autoconfigure/ui/ZipkinUiAutoConfiguration.class]: Cannot register bean definition [Root bean: class [null]; scope=; abstract=false; lazyInit=null; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=zipkin2.autoconfigure.ui.ZipkinUiAutoConfiguration; factoryMethodName=characterEncodingFilter; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [zipkin2/autoconfigure/ui/ZipkinUiAutoConfiguration.class]] for bean 'characterEncodingFilter': There is already [Root bean: class [null]; scope=; abstract=false; lazyInit=null; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=org.springframework.boot.autoconfigure.web.servlet.HttpEncodingAutoConfiguration; factoryMethodName=characterEncodingFilter; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [org/springframework/boot/autoconfigure/web/servlet/HttpEncodingAutoConfiguration.class]] bound.
+
